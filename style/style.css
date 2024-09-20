@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+
+#index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main {
+    height: 94.5874vh;
+    background-image: url(../assets/background-1.png);
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2d3142;
+    height: 5vh;
+}
+
+.links {
+    margin-left: 60px;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.unclicked {
+    color: #ffffff;
+}
+
+.clicked {
+    color: #ef8354;
+}
+
+.icons {
+    margin-right: 60px;
+    display: flex;
+    gap: 1rem;
+}
+
+
+h1 {
+    font-size: 5rem;
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#left img {
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+@media (max-width: 1024px) {
+    #index-main {
+        flex-direction: column;
+    }
+
+    .grid-item-1 {
+        margin-top: 60px;
+    }
+
+    .grid-item-1 h3 {
+        margin-top: 20px;
+    }
+
+    .header-container {
+        justify-content: center;
+    }
+
+    .links {
+        margin: 0;
+    }
+
+    .links ul {
+        padding: 0;
+    }
+
+    .links li {
+        margin-right: 20px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 45px
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .links {
+        margin: 0;
+    }
+
+    .links ul {
+        padding: 0;
+    }
+
+    .links li {
+        display: block;
+        margin-right: 0;
+        font-size: 0.8 rem;
+        padding: 3px;
+    }
+    
+    .header-container {
+        text-align: center;
+        height: auto;
+    }
+
+    #left img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-right: 0px;
+    }
+
+    #index-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

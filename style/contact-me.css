@@ -1,0 +1,47 @@
+#flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+#flex-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.65rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+input, textarea {
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #b8b9bb;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+#button {
+    background-color: #2d3142;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    img {
+        display: none;
+    }
+}
